@@ -14,7 +14,7 @@ public class MenuSelectionProcess {
         
         if (order.equals("Rice")) {
              selection.add("Beans");
-             selection.add("Vegetable");
+             selection.add("Vegetables");
              selection.add("Fruits");
              
         } else if (order.equals("Sandwich")) {

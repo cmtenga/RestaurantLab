@@ -14,7 +14,7 @@
             <title>Menu Selection Page</title>
     </head>
     <body>
-        <h1>YOUR ORDER IS: </h1>
+        <h1>YOUR ORDER COMES WITH: </h1>
     <p>
 
     <%
@@ -22,11 +22,11 @@
         Iterator it = recs.iterator();
         while(it.hasNext()) {
             
-            out.print("<br>try: " + it.next());
+            out.print( "<br>" + it.next());
         }
     %>
     
-    <p><a href="index.jsp">Back
+    <p style="font-size:30px;"><a href="index.jsp">Back
         </a>
     </body>
 </html>
