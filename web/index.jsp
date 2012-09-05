@@ -48,10 +48,10 @@
        
             </p>
             
-            <center>
-                <input id="orderSubmit" name="orderSubmit" type="submit" value="Click to Order ">
-            </center>
+        <input id="orderSubmit" name="orderSubmit" type="submit" value="SUBMIT YOUR ORDER"/>
+        <input type="submit" value="CANCEL" name="Cancel" />
+            
         </form>
-        
+          
     </body>
 </html>

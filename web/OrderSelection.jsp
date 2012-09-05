@@ -1,9 +1,11 @@
 <%-- 
     Document   : OrderSelection
     Created on : Aug 30, 2012, 11:05:17 PM
-    Author     : Owner
+    Author     : Cecilia Mtenga
 --%>
 
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,26 +14,19 @@
             <title>Menu Selection Page</title>
     </head>
     <body>
-       <h1>Menu Selection</h1>
-        <p>Select Menu you want to order today
-        </p>
+        <h1>YOUR ORDER IS: </h1>
+    <p>
 
-        <form method="POST" action="control.do">
-            <p>
-                <!-- the name attribute is set to 'order' which is the
-                     parameter to be retrieved by the servlet -->
-                <select id="order" name="order" size ="8">
-                    <option value="Rice comes with beef"> Rice </option>
-                    <option value="Sandwich comes with french fries">Sandwich</option>
-                    <option value="Fish comes with Rice or Chapati">Fish</option>
-                    <option value="Salad comes with beans, vegetables">Salad</option>
-                </select>
-            </p>
-           
-        <input id="orderSubmit" name="orderSubmit" type="submit" value="SUBMIT YOUR ORDER"/>
-       
-        <input type="submit" value="CANCEL" name="Cancel" />
-        </form>
-        
+    <%
+        List recs = (List)request.getAttribute("menu selection");
+        Iterator it = recs.iterator();
+        while(it.hasNext()) {
+            
+            out.print("<br>try: " + it.next());
+        }
+    %>
+    
+    <p><a href="index.jsp">Back
+        </a>
     </body>
 </html>
