@@ -24,7 +24,7 @@
                     <option value="Rice comes with beef"> Rice </option>
                     <option value="Sandwich comes with french fries">Sandwich</option>
                     <option value="Fish comes with Rice or Chapati">Fish</option>
-                    <option value="Salad comes with beans, vegetables">Ugali</option>
+                    <option value="Salad comes with beans, vegetables">Salad</option>
                 </select>
             </p>
            
